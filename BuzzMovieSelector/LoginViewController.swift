@@ -8,6 +8,8 @@
 
 import UIKit
 
+let user_manager = UserManager()
+
 class LoginViewController: UIViewController {
     
     @IBOutlet var username: UITextField?
@@ -16,10 +18,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonPressed()  {
         let login_name: String = (username?.text)!
-        NSLog(login_name)
         let login_password: String = (password?.text)!
-        NSLog(login_password)
-        let user_manager = UserManager()
         if (user_manager.handleLogin(login_name, password: login_password)) {
             loginMessage!.text = "Login Successful"
         } else {

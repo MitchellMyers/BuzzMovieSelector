@@ -16,13 +16,10 @@ class RegistrationViewController: UIViewController {
     
     @IBAction func createAccount() {
         let login_username: String = (username?.text)!
-        NSLog(login_username)
         let login_password: String = (password?.text)!
-        NSLog(login_password)
         let login_fullname: String = (fullname?.text)!
         NSLog(login_fullname)
-        let users = UserManager()
-        users.addUser(login_username, password: login_password)
+        user_manager.addUser(login_username, password: login_password)
     }
     
     override func viewDidLoad() {

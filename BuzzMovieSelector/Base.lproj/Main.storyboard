@@ -119,10 +119,18 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccount" destination="v6j-xT-aZV" eventType="touchUpInside" id="8Ze-7g-ZdN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="fullname" destination="c6G-RK-Pac" id="9jE-TR-n7r"/>
+                        <outlet property="password" destination="c1C-ip-U4p" id="cjG-pw-EA2"/>
+                        <outlet property="username" destination="hvC-pC-uww" id="hvu-qn-riA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHr-lY-9WR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class User {
+class User {
     
     let name: String
     let password: String
@@ -20,6 +20,14 @@ public class User {
     
     func checkPassword(checked_password: String) -> Bool {
         return checked_password == password;
+    }
+    
+    func getName() -> String {
+        return name
+    }
+    
+    func getPassword() -> String {
+        return password
     }
     
 }

@@ -8,27 +8,38 @@
 
 import Foundation
 
-public class UserManager {
+class UserManager {
     
     var users = [String: User]()
     
-    func findUser(name: String) -> User {
-        let mitch = User(name: "Mitch", password: "test")
-        users["mmyers39"] = mitch
+    func findUser(name: String) -> User? {
         let person = users[name]
-        return person!
+        return person
     }
     
     func addUser(name: String, password: String) {
-        if (users[name] != nil) {
+        if (users[name] == nil) {
             let new_user = User(name: name, password: password)
             users[name] = new_user
+        }
+        
+    }
+    
+    func testUsers() {
+        for (name, user) in users {
+            NSLog(name)
+            NSLog(user.getPassword())
+            NSLog(String(users.count))
         }
     }
     
     func handleLogin(name: String, password: String) -> Bool {
-        let user = findUser(name)
-        return user.checkPassword(password)
+        if let user = findUser(name) {
+            return user.checkPassword(password)
+        } else {
+            return false
+        }
     }
+    
     
 }
