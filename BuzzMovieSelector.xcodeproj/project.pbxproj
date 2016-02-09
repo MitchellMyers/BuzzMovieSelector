@@ -16,6 +16,7 @@
 		30C6230A1C6980220086634F /* BuzzMovieSelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C623091C6980220086634F /* BuzzMovieSelectorUITests.swift */; };
 		30C623181C69844A0086634F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C623171C69844A0086634F /* User.swift */; };
 		30C6231A1C6987850086634F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C623191C6987850086634F /* UserManager.swift */; };
+		30C6231E1C69A1AE0086634F /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6231D1C69A1AE0086634F /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		30C6230B1C6980220086634F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30C623171C69844A0086634F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		30C623191C6987850086634F /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		30C6231D1C69A1AE0086634F /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				30C622EB1C6980220086634F /* LoginViewController.swift */,
 				30C623171C69844A0086634F /* User.swift */,
 				30C623191C6987850086634F /* UserManager.swift */,
+				30C6231D1C69A1AE0086634F /* RegistrationViewController.swift */,
 			);
 			name = Login/Registration;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				30C622EA1C6980220086634F /* AppDelegate.swift in Sources */,
 				30C6231A1C6987850086634F /* UserManager.swift in Sources */,
 				30C623181C69844A0086634F /* User.swift in Sources */,
+				30C6231E1C69A1AE0086634F /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +502,7 @@
 				30C623101C6980220086634F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30C623111C6980220086634F /* Build configuration list for PBXNativeTarget "BuzzMovieSelectorTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				30C623131C6980220086634F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30C623141C6980220086634F /* Build configuration list for PBXNativeTarget "BuzzMovieSelectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +520,7 @@
 				30C623161C6980220086634F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

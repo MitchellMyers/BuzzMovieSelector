@@ -13,20 +13,22 @@ public class UserManager {
     var users = [String: User]()
     
     func findUser(name: String) -> User {
+        let mitch = User(name: "Mitch", password: "test")
+        users["mmyers39"] = mitch
         let person = users[name]
         return person!
     }
     
     func addUser(name: String, password: String) {
-        let new_user = User(name: name, password: password)
-        users[name] = new_user
+        if (users[name] != nil) {
+            let new_user = User(name: name, password: password)
+            users[name] = new_user
+        }
     }
     
     func handleLogin(name: String, password: String) -> Bool {
         let user = findUser(name)
-        if (user!) {
-            
-        }
+        return user.checkPassword(password)
     }
     
 }
