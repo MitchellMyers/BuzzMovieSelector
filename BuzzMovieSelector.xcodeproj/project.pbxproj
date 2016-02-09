@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		30C622EA1C6980220086634F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C622E91C6980220086634F /* AppDelegate.swift */; };
-		30C622EC1C6980220086634F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C622EB1C6980220086634F /* ViewController.swift */; };
+		30C622EC1C6980220086634F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C622EB1C6980220086634F /* LoginViewController.swift */; };
 		30C622EF1C6980220086634F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C622ED1C6980220086634F /* Main.storyboard */; };
 		30C622F11C6980220086634F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C622F01C6980220086634F /* Assets.xcassets */; };
 		30C622F41C6980220086634F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30C622F21C6980220086634F /* LaunchScreen.storyboard */; };
 		30C622FF1C6980220086634F /* BuzzMovieSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C622FE1C6980220086634F /* BuzzMovieSelectorTests.swift */; };
 		30C6230A1C6980220086634F /* BuzzMovieSelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C623091C6980220086634F /* BuzzMovieSelectorUITests.swift */; };
+		30C623181C69844A0086634F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C623171C69844A0086634F /* User.swift */; };
+		30C6231A1C6987850086634F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C623191C6987850086634F /* UserManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		30C622E61C6980220086634F /* BuzzMovieSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzMovieSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C622E91C6980220086634F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30C622EB1C6980220086634F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30C622EB1C6980220086634F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30C622EE1C6980220086634F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30C622F01C6980220086634F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30C622F31C6980220086634F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		30C623051C6980220086634F /* BuzzMovieSelectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzMovieSelectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C623091C6980220086634F /* BuzzMovieSelectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzMovieSelectorUITests.swift; sourceTree = "<group>"; };
 		30C6230B1C6980220086634F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C623171C69844A0086634F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		30C623191C6987850086634F /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,8 @@
 		30C622E81C6980220086634F /* BuzzMovieSelector */ = {
 			isa = PBXGroup;
 			children = (
+				30C6231C1C6987D60086634F /* Login/Registration */,
 				30C622E91C6980220086634F /* AppDelegate.swift */,
-				30C622EB1C6980220086634F /* ViewController.swift */,
 				30C622ED1C6980220086634F /* Main.storyboard */,
 				30C622F01C6980220086634F /* Assets.xcassets */,
 				30C622F21C6980220086634F /* LaunchScreen.storyboard */,
@@ -123,6 +127,16 @@
 				30C6230B1C6980220086634F /* Info.plist */,
 			);
 			path = BuzzMovieSelectorUITests;
+			sourceTree = "<group>";
+		};
+		30C6231C1C6987D60086634F /* Login/Registration */ = {
+			isa = PBXGroup;
+			children = (
+				30C622EB1C6980220086634F /* LoginViewController.swift */,
+				30C623171C69844A0086634F /* User.swift */,
+				30C623191C6987850086634F /* UserManager.swift */,
+			);
+			name = Login/Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C622EC1C6980220086634F /* ViewController.swift in Sources */,
+				30C622EC1C6980220086634F /* LoginViewController.swift in Sources */,
 				30C622EA1C6980220086634F /* AppDelegate.swift in Sources */,
+				30C6231A1C6987850086634F /* UserManager.swift in Sources */,
+				30C623181C69844A0086634F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

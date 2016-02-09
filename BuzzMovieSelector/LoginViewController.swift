@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  BuzzMovieSelector
 //
 //  Created by Mitchell Myers on 2/8/16.
